@@ -1,0 +1,130 @@
+html {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+/* -------------------DESKTOP----------------------   */
+@media screen and (min-width:1200px) {
+
+#response {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: white;
+    border-radius: 1em;
+    display: inline-block;
+    padding: 0.3em 0.7em;
+    margin-bottom: 2em;
+    border: solid black 0.1em;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: sans-serif;
+}
+
+section div {
+    background-color: #ffffff;
+    width: 13vw;
+    min-width: 160px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4em;
+    padding: 1em;
+    color: black;
+    border-radius: 1em;
+    transition: all .2s ease-in-out; 
+    border: solid black 0.2em;
+}
+
+section div:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+div img {
+    border-radius: 0.5em;
+    width: 100%;
+}  
+}
+
+
+
+/* -----------------TABLET-------------- */
+@media screen and (max-width:1200px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: sans-serif;
+    }
+
+    #response {
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+        font-family: sans-serif;
+        background-color: white;
+        border-radius: 1em;
+        display: inline-block;
+        padding: 0.3em 0.7em;
+        margin-bottom: 2em;
+        border: solid black 0.1em;
+    }
+    
+    section div {
+        background-color: #ffffff;
+        width: 20vw;
+        min-width: 160px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 4em;
+        padding: 1em;       
+        border-radius: 1em;
+        color: black;
+
+        transition: all .2s ease-in-out; 
+        border: solid black 0.2em;
+
+    }
+    
+    section div:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    div img {
+        border-radius: 0.5em;
+        width: 100%;
+    } 
+}
+
+
+
+/* -----------------MOBILE---------------- */
+    
+@media screen and (max-width:800px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: sans-serif;
+    }
+
+    section div{
+        scale: 1.2;
+        margin-bottom: 6em;
+    }
+
+    section div:hover {
+        transform: none;
+        cursor: pointer;
+    }
+
+    h3 {
+        margin: 0.7em;
+    }
+}
