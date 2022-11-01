@@ -1,6 +1,6 @@
 //load gør at det bliver læst ind når siden bliver læst ind
 addEventListener('load', fetchUserData);
-    
+
 function fetchUserData(){
     fetch('https://reqres.in/api/users/')
         .then(response => response.json())
@@ -15,7 +15,6 @@ function fetchUserData(){
                         <img src="${avatar}"></img> <br>
                         <h3>${first_name} ${last_name}</h3>
                         <a>${email}</a><br></br>
-                                               
                     </div>
                 `;
             });
