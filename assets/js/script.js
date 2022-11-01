@@ -1,4 +1,4 @@
-
+//load gør at det bliver læst ind når siden bliver læst ind
 addEventListener('load', fetchUserData);
     
 function fetchUserData(){
